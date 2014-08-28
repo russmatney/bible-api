@@ -1,11 +1,13 @@
 package main
 
-import "github.com/go-martini/martini"
+import (
+  "github.com/go-martini/martini"
+)
 
 func main() {
 	m := martini.Classic()
-	m.Get("/hi", func() string {
-		return "Hello, duder!"
+	m.Get("/", func() string {
+		return "Hello, dear!"
 	})
 	m.Run()
 }

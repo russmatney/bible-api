@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "homepage": "https://github.com/russmatney/countohol",
+  "authors": [
+    "Russell Matney <russell.matney@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.7.0",
+    "ember-data": "~0.0.14"
+  },
+  "resolutions": {
+    "ember": "~1.7.0"
+  }
+}
