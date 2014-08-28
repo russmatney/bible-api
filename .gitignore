@@ -24,3 +24,5 @@ _testmain.go
 
 gin-bin
 tmp
+
+public/bower_components/
