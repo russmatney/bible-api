@@ -9,7 +9,7 @@ var paths = {
 
 gulp.task('connect', function() {
   connect.server({
-    app: [__dirname + "/public"],
+    root: "public",
     port: 4000,
     livereload: true
   });
