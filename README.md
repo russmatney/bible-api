@@ -5,6 +5,14 @@ A basic go-martini server
 
 ###Up and Running
 
+####Install
+
+Install martini
+
+```
+go get github.com/go-martini/martini
+```
+
 ####Live-reload
 
 If you want live-reload (duh),
