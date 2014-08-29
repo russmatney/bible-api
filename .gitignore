@@ -26,3 +26,5 @@ gin-bin
 tmp
 
 public/lib
+.DS_Store
+node_modules
