@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     shell = require('gulp-shell');
 
 var paths = {
-  views: ['./*/**.html'],
-  scripts: ['./*/**.js']
+  views: ['./public/*/**.html'],
+  scripts: ['./public/js/*/**.js']
 };
 
 gulp.task('connect', function() {
@@ -32,4 +32,4 @@ gulp.task('watch', function() {
 
 gulp.task('goserver', shell.task(['gin']));
 
-gulp.task('default', ['connect', 'scripts', 'html', 'watch', 'goserver']);
+gulp.task('default', ['connect', 'scripts', 'html', 'watch']);
