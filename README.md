@@ -1,4 +1,4 @@
-countohol
+Bible API
 =========
 
 A basic go-martini server
