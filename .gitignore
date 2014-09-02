@@ -28,3 +28,4 @@ tmp
 public/lib
 .DS_Store
 node_modules
+bible-api
