@@ -3,7 +3,9 @@ Bible API
 
 A basic go-martini server
 
-###Up and Running
+##Up and Running
+
+###Golang server
 
 ####Install
 
@@ -37,4 +39,23 @@ go get
 go run server.go
 ```
 
-Ping localhost:3000 for the magic.
+Ping [localhost:3000](http://localhost:3000) for the server
+
+###Ember front-end helper app
+
+####Install
+
+Install npm + bower dependencies
+
+```
+npm install
+bower install
+```
+
+Run the live-reload dev app via gulp:
+
+```
+gulp
+```
+
+Visit [localhost:4000](http://localhost:4000)
