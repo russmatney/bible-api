@@ -1,4 +1,6 @@
 window.App = Ember.Application.create();
 
-console.log('apppddddp');
+App.ApplicationController = Ember.Controller.extend({
+  showName: "Star Trek"
+});
 

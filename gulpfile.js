@@ -3,8 +3,8 @@ var gulp = require('gulp'),
     shell = require('gulp-shell');
 
 var paths = {
-  views: ['./public/*/**.html'],
-  scripts: ['./public/js/*/**.js']
+  views: ['./*/**.html'],
+  scripts: ['./js/*/**.js']
 };
 
 gulp.task('connect', function() {

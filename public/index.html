@@ -6,25 +6,26 @@
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <h1>
-      Hello, copper
-    </h1>
+    <script type="text/x-handlebars">
+      <header>
+        Bible API - Ember Helper App
+      </header>
 
-    <script type="text/x-handlebars" data-template-name="home">
-      <input type="text" id="name">
-      <label>{{name}}</label>
+      <div>
+        {{input type="text" value=showName}}
+        {{showName}} there it is
+      </div>
+
+      <footer>
+        &copy;2014 Russ Matney
+      </footer>
     </script>
-
 
     <!--libs-->
     <script src="./lib/jquery/dist/jquery.min.js"></script>
     <script src="./lib/handlebars/handlebars.min.js"></script>
     <script src="./lib/ember/ember.js"></script>
-    <script src="./lib/ember-data/ember-data.js"></script>
     <!--app-->
     <script src="./js/app.js"></script>
-    <script src="./js/router.js"></script>
-    <script src="./js/models/home.js"></script>
-    <script src="./js/controller.js"></script>
   </body>
 </html>
