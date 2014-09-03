@@ -19,6 +19,12 @@
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-connect": "^2.0.6",
-    "gulp-shell": "^0.2.9"
+    "gulp-shell": "^0.2.9",
+    "gulp-wrap": "~0.3.0",
+    "gulp-concat": "~2.3.4",
+    "ember-handlebars": "~1.2.0",
+    "gulp-declare": "~0.3.0",
+    "gulp-handlebars": "~2.2.0",
+    "gulp-debug": "~1.0.1"
   }
 }
