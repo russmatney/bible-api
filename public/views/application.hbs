@@ -1,2 +1,17 @@
 <h4>howdy</h4>
-<h4>howdy</h4>
+
+<aside>
+  <ul>
+    <li><h2>Books</h2></li>
+
+    {{#each}}
+      <li>
+        {{name}}
+      </li>
+    {{/each}}
+  </ul>
+</aside>
+
+<section>
+  {{outlet}}
+</section>

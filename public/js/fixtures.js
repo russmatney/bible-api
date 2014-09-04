@@ -4,7 +4,7 @@ App.FIXTURES = [
     id: "inbox",
     chapters: [
       {
-        id: 1,
+        id: "1",
         subject: "Welcome to Ember",
         from: "tomster@emberjs.com",
         to: "user@example.com",

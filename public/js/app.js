@@ -6,6 +6,7 @@ App.Book = Em.Object.extend();
 App.Book.reopenClass({
   find: function(id) {
     if (id) {
+      console.log(id);
       return App.FIXTURES.findBy('id', id);
     } else {
       return App.FIXTURES;
@@ -29,7 +30,9 @@ App.ApplicationRoute = Em.Route.extend({
 
 App.ChapterRoute = Em.Route.extend({
   model: function(params) {
-    var obj = this.modelFor('book').chapters.findBy('id', params.message_id);
+    console.log(params);
+    var obj = this.modelFor('book').chapters.findBy('id', params.chapter_id);
+    console.log(obj);
     return obj;
   }
 });
