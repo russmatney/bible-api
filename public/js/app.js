@@ -1,5 +1,6 @@
 window.App = Ember.Application.create();
 
+console.log('LOG');
 //Model
 App.Bible = Em.Object.extend();
 

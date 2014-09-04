@@ -10,8 +10,9 @@ var handlebars = require('gulp-handlebars'),
 var debug = require('gulp-debug');
 
 var paths = {
-  views: ['./public/index.html', './public/views/*/**.hbs'],
-  scripts: ['./public/js/*/**.js']
+  templates: [ './views/*/**.hbs'],
+  index: ['./index.html'],
+  scripts: ['./js/*/**.js']
 };
 
 gulp.task('connect', function() {
@@ -23,7 +24,7 @@ gulp.task('connect', function() {
 })
 
 gulp.task('templates', function() {
-  gulp.src(paths.views)
+  gulp.src(paths.templates)
     .pipe(handlebars({
       handlebars: require('ember-handlebars')
     }))
@@ -43,7 +44,8 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.views, ['templates']);
+  gulp.watch(paths.templates, ['templates']);
+  gulp.watch(paths.index, ['scripts']);
   gulp.watch(paths.scripts, ['scripts']);
 });
 
