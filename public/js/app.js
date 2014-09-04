@@ -1,9 +1,9 @@
 window.App = Ember.Application.create();
 
 //Model
-App.Bible = Em.Object.extend();
+App.Book = Em.Object.extend();
 
-App.Bible.reopenClass({
+App.Book.reopenClass({
   find: function(id) {
     if (id) {
       return App.FIXTURES.findBy('id', id);
@@ -23,13 +23,14 @@ App.Router.map(function(){
 
 App.ApplicationRoute = Em.Route.extend({
   model: function() {
-    return App.Bible.find();
+    return App.Book.find();
   }
 });
 
-App.BibleRoute = Em.Route.extend({
+App.ChapterRoute = Em.Route.extend({
   model: function(params) {
-    return this.modelFor('book').chapters.findBy('id', params.message_id);
+    var obj = this.modelFor('book').chapters.findBy('id', params.message_id);
+    return obj;
   }
 });
 
