@@ -10,9 +10,9 @@ var handlebars = require('gulp-handlebars'),
 var debug = require('gulp-debug');
 
 var paths = {
-  templates: [ './views/*/**.hbs'],
-  index: ['./index.html'],
-  scripts: ['./js/*/**.js']
+  templates: [ './public/views/*.hbs'],
+  index: ['./public/index.html'],
+  scripts: ['./public/js/*.js']
 };
 
 gulp.task('connect', function() {
