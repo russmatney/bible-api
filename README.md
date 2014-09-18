@@ -59,3 +59,9 @@ gulp
 ```
 
 Visit [localhost:4000](http://localhost:4000)
+
+
+##Vision
+
+An API for any dev that wants simple Bible access,
+with an Ember app on top to help test out and save a daily read and some favorites.
